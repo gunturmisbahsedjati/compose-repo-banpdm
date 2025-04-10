@@ -1,0 +1,11 @@
+services:
+  nginx-repo:
+    container_name: nginx-repo-repo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:80
+    volumes:
+      - ./drive:/usr/share/nginx/html
+    restart: always
