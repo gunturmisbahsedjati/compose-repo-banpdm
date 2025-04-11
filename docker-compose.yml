@@ -9,3 +9,8 @@ services:
     volumes:
       - ./drive:/usr/share/nginx/html
     restart: always
+    networks:
+      - banpdm_network
+
+networks:
+  banpdm_drive1_network:
