@@ -10,7 +10,7 @@ services:
       - ./drive:/usr/share/nginx/html
     restart: always
     networks:
-      - banpdm_network
+      - banpdm_drive1_network
 
 networks:
   banpdm_drive1_network:
